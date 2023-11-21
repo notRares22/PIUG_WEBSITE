@@ -18,6 +18,11 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- Google Analytics tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-54416S4JFP"></script>
@@ -90,31 +95,70 @@
 
 
     <!-- HERO -->
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+    <section id="carouselSection">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+                        <div class="bg-overlay"></div>
 
-        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row">
 
-        <div class="container">
-            <div class="row">
+                                <div class="col-lg-8 col-md-10 mx-auto col-12">
+                                    <div class="hero-text mt-5 text-center">
 
-                <div class="col-lg-8 col-md-10 mx-auto col-12">
-                    <div class="hero-text mt-5 text-center">
+                                        <h6 data-aos="fade-up" data-aos-delay="300">new way to build a healthy lifestyle!</h6>
 
-                        <h6 data-aos="fade-up" data-aos-delay="300">new way to build a healthy lifestyle!</h6>
+                                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at Gymso Fitness</h1>
 
-                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Upgrade your body at Gymso Fitness</h1>
+                                        <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>
 
-                        <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>
+                                        <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">learn more</a>
 
-                        <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">learn more</a>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="hero d-flex flex-column justify-content-center align-items-center custom-carousel-item" id="home">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row">
 
+                                <div class="col-lg-8 col-md-10 mx-auto col-12">
+                                    <div class="hero-text mt-5 text-center">
+                                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Discover the Gymso Experience</h1>
+                                        <a href="#contact" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Contact Us</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero d-flex flex-column justify-content-center align-items-center video" id="home">
+                        <video id="carouselVideo" autoplay muted loop playsinline>
+                            <source src="videos/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </section>
-
 
     <section class="feature" id="feature">
         <div class="container">
@@ -123,9 +167,9 @@
                 <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
                     <h2 class="mb-3 text-white" data-aos="fade-up">New to the gymso?</h2>
 
-                    <h6 class="mb-4 text-white" data-aos="fade-up">Your membership is up to 2 months FREE ($62.50 per month)</h6>
+                    <h6 class="mb-4 text-white" data-aos="fade-up">Your membership is up to 2 months FREE ($50 per month)</h6>
 
-                    <p data-aos="fade-up" data-aos-delay="200">Gymso is free HTML template by <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate</a> for your commercial website. Bootstrap v4.2.1 Layout. Feel free to use it.</p>
+                    <p data-aos="fade-up" data-aos-delay="200">Welcome to Gymso Fitness, where strength meets wellness! At Gymso, we're not just a gym – we're a community dedicated to helping you achieve your fitness goals and embrace a healthier lifestyle.</p>
 
                     <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" data-toggle="modal" data-target="#membershipForm">Become a member today</a>
                 </div>
@@ -163,9 +207,7 @@
                 <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
                     <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are Gymso</h2>
 
-                    <p data-aos="fade-up" data-aos-delay="400">You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
-
-                    <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
+                    <p data-aos="fade-up" data-aos-delay="400">Our state-of-the-art facilities, expert trainers, and diverse range of classes cater to fitness enthusiasts of all levels. Whether you're sculpting your physique, enhancing endurance, or seeking a supportive fitness family, Gymso is your go-to destination. Join us on the journey to a stronger, healthier you!</p>
 
                 </div>
 
@@ -228,9 +270,10 @@
 
                             <span><strong>Trained by</strong> - Bella</span>
 
-                            <span class="class-price">$50</span>
+                            <span class="class-price">$20</span>
 
-                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                            <p class="mt-3">Yoga is a holistic practice that harmonizes the mind, body, and spirit through a combination of physical postures,
+                            breath control, and meditation. It promotes flexibility, balance, and inner peace, making it an ideal practice for stress relief and overall well-being.</p>
                         </div>
                     </div>
                 </div>
@@ -244,9 +287,10 @@
 
                             <span><strong>Trained by</strong> - Mary</span>
 
-                            <span class="class-price">$66</span>
+                            <span class="class-price">$30</span>
 
-                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                            <p class="mt-3">Aerobics is a dynamic and energetic fitness routine that combines rhythmic movements with music to enhance cardiovascular endurance. 
+                            This high-energy workout not only improves heart health but also boosts mood and burns calories, making it a fun and effective way to stay fit.</p>
                         </div>
                     </div>
                 </div>
@@ -260,9 +304,10 @@
 
                             <span><strong>Trained by</strong> - Cathe</span>
 
-                            <span class="class-price">$75</span>
+                            <span class="class-price">$50</span>
 
-                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                            <p class="mt-3">Cardio, short for cardiovascular exercise, is any activity that elevates your heart rate and enhances circulation. 
+                            Engaging in cardio workouts, such as running, cycling, or brisk walking, helps improve cardiovascular health, stamina, and metabolism</p>
                         </div>
                     </div>
                 </div>
@@ -428,9 +473,7 @@
 
                 <div class="ml-auto col-lg-4 col-md-5">
                     <p class="copyright-text">
-                        Copyright &copy; 2020 Gymso Fitness Co.
-
-                        <br>Design: <a href="https://www.tooplate.com">Tooplate</a>
+                        Copyright &copy; 2023 Gymso Fitness Co.
                     </p>
                 </div>
 
@@ -496,6 +539,7 @@
     <script src="js/custom.js"></script>
     <script src="js/search.js"></script>
     <script src="js/darkmode.js"></script>
+    <script src="js/video.js"></script>
 
 </body>
 </html>
